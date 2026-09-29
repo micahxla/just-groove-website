@@ -5,6 +5,22 @@
 
 
 /* ---------- RESET ---------- */
+@font-face {
+    font-family: "RoundedGeometricNumerals";
+    src: url("../assets/fonts/Rounded_Geometric_Numerals.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0030-0039;
+}
+
+@font-face {
+    font-family: "DJGrooveCustom";
+    src: url("../assets/fonts/Vagoda.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 * {
     margin: 0;
@@ -19,7 +35,7 @@ html {
 body {
     background: #0a0a0a;
     color: #f5f5f5;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "RoundedGeometricNumerals", "DJGrooveCustom", Helvetica, sans-serif;
     line-height: 1.5;
 }
 
@@ -152,19 +168,15 @@ a {
 }
 
 .hero h1 {
-    font-size: clamp(5rem, 14vw, 13rem);
-
-    line-height: 0.78;
-
-    letter-spacing: -0.07em;
-
-    font-weight: 900;
-
-    margin-bottom: 14px;
+    font-size: clamp(4rem, 10vw, 9rem);
+    line-height: 0.82;
+    letter-spacing: -0.04em;
+    font-weight: 400;
+    margin-bottom: 35px;
 }
 
 .hero-tagline {
-    color: #ed503f;
+    color: #af0;
     font-size: clamp(1.35rem, 4vw, 3.5rem);
     font-weight: 400;
     line-height: 1.15;
@@ -176,7 +188,7 @@ a {
 }
 
 .hero-description {
-    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-size: clamp(0.5rem, 1vw, 1.0rem);
 
     margin-bottom: 35px;
 
@@ -254,13 +266,13 @@ a {
 }
 
 .section h2 {
-    font-size: clamp(2.7rem, 6vw, 6rem);
+    font-size: clamp(2.4rem, 5vw, 5.2rem);
 
     line-height: 0.95;
 
-    letter-spacing: -0.045em;
+    letter-spacing: -0.055em;
 
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 
 .section-content > p {
@@ -278,6 +290,11 @@ a {
 
 .about {
     background: #0a0a0a;
+}
+
+.about .section-content > p .about-event-count {
+    font-size: 1.35em;
+    line-height: 0;
 }
 
 
@@ -346,14 +363,14 @@ a {
 }
 
 .stat strong {
-    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-size: clamp(1.5rem, 4vw, 3rem);
 
     line-height: 1;
 
     letter-spacing: -0.06em;
 }
 
-.stat span {
+.stat > span {
     margin-top: 15px;
 
     font-size: 0.7rem;
@@ -364,7 +381,9 @@ a {
 
     color: #888888;
 }
-
+.accent-word {
+    color: #af0;
+}
 .client-showcase {
     padding: 32px 0;
     border-top: 1px solid #333333;
@@ -406,8 +425,21 @@ a {
     max-width: 180px;
     max-height: 95px;
     object-fit: contain;
+    filter: none;
+    opacity: 1;
+}
+
+.client-logos img[src$="miami-open.png"],
+.client-logos img[src$="fontainebleau.png"] {
     filter: brightness(0) invert(1);
-    opacity: 0.85;
+}
+
+.client-logos img[src$="macys.png"] {
+    filter: url("#client-white-lettering");
+}
+
+.client-logos img[src$="spirit-airlines.png"] {
+    filter: url("#client-spirit-yellow");
 }
 
 @media (max-width: 600px) {

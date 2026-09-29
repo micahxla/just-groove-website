@@ -94,22 +94,27 @@
         <section id="home" class="hero">
             <div class="hero-symbol" aria-hidden="true">
                 <img
-                    src="assets/logos/just-groove-symbol-white.png"
-                    alt=""
-                >
+    src="assets/logos/just-groove-symbol-white.png"
+    alt=""
+    width="512"
+    height="512"
+    fetchpriority="high"
+    decoding="async"
+>
             </div>
 
             <div class="hero-content">
                 
 
                 <div class="hero-brand">
-                    <h1>JUST<br>GROOVE</h1>
+                    <h1>JUST GROOVE</h1>
                     <p class="hero-tagline">the <strong>PREMIER EVENT</strong> company</p>
                 </div>
 
                 <p class="hero-description">
-                    Music for the moment.<br>
-                    Energy for the experience.
+                an <span class="accent-word">eye</span> for style.<br>
+                an <span class="accent-word">ear</span> for music that connects.<br>
+                an <span class="accent-word">instinct</span> for the extraordinary.<br>
                 </p>
 
                 <a href="#contact" class="button">
@@ -132,21 +137,17 @@
             <div class="section-content">
 
                 <h2>
-                    MORE THAN MUSIC.<br>
-                    IT'S AN EXPERIENCE.
+                    MORE THAN <span class="accent-word">MUSIC</span>. IT'S AN <span class="accent-word">EXPERIENCE</span>.
                 </h2>
 
                 <p>
-                    Just Groove is led by Christopher Harrell, a professional
-                    DJ and emcee with more than two decades of experience
-                    creating memorable experiences through music.
-                </p>
-
-                <p>
-                    With more than 1,000 events throughout his professional
-                    career, his style blends timeless hits with diverse genres
-                    to create an atmosphere that connects with audiences of
-                    all backgrounds.
+                Christopher Harrell, known professionally as DJ Groove, is an accomplished DJ and emcee with more than two decades of experience and over <span class="accent-word about-event-count">1,000</span> events to his credit. 
+                His approach combines thoughtful <span class="accent-word">music</span> curation with an instinct for reading the room, creating a sound that feels personal to each occasion. </p>
+                
+                <p>As a former professional choreographer, Groove brings a dancer’s understanding of rhythm, timing, and movement to the DJ booth. 
+                His love of dance shapes how he selects <span class="accent-word">music</span>, builds energy, and responds to a crowd. He understands how people move to <span class="accent-word">music</span> and how the right selection can draw them together on the dance floor. 
+                Blending timeless favorites with <span class="accent-word">music</span> across genres and generations, Groove tailors each set to the guests, the atmosphere, and the host’s vision. 
+                As an emcee, he brings a confident, polished presence that keeps the celebration flowing naturally. His experience spans resort residencies, corporate entertainment, and major sporting events, grounded in a personal connection to both <span class="accent-word">music</span> and dance.
                 </p>
 
             </div>
@@ -161,18 +162,18 @@
 
             <div class="section-content">
 
-                <h2>BEHIND THE MUSIC</h2>
+                <h2>BEHIND THE <span class="accent-word">MUSIC.</span></h2>
 
                 <div class="stats">
 
                     <div class="stat">
-                        <strong>20+</strong>
-                        <span>Years Experience</span>
+                        <strong>20<span class="accent-word">+</span></strong>
+                        <span class="accent-word">Years Experience</span>
                     </div>
 
                     <div class="stat">
-                        <strong>1,000+</strong>
-                        <span>Events</span>
+                        <strong>1,000<span class="accent-word">+</span></strong>
+                        <span class="accent-word">Events</span>
                     </div>
 
                 </div>
@@ -180,10 +181,21 @@
                 <div class="client-showcase" aria-labelledby="client-heading">
                     <h3 id="client-heading">Past clients include</h3>
 
+                    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position: absolute;">
+                        <defs>
+                            <filter id="client-spirit-yellow" color-interpolation-filters="sRGB">
+                                <feFlood flood-color="#ffec00" />
+                                <feComposite in2="SourceAlpha" operator="in" />
+                            </filter>
+                            <filter id="client-white-lettering" color-interpolation-filters="sRGB">
+                                <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 -10 -10 -10 0 1" result="whiteMask" />
+                                <feComposite in="whiteMask" in2="SourceGraphic" operator="in" result="whiteLettering" />
+                                <feComposite in="whiteLettering" in2="SourceGraphic" operator="over" />
+                            </filter>
+                        </defs>
+                    </svg>
+
                     <ul class="client-logos">
-                        <li>
-                            <img src="assets/logos/clients/xtreme-action-park.png" alt="Xtreme Action Park" width="1024" height="260" loading="lazy" decoding="async">
-                        </li>
                         <li>
                             <img src="assets/logos/clients/miami-open.png" alt="Miami Open" width="500" height="293" loading="lazy" decoding="async">
                         </li>
@@ -192,6 +204,21 @@
                         </li>
                         <li>
                             <img src="assets/logos/clients/marriott.png" alt="Marriott Resorts" width="1024" height="756" loading="lazy" decoding="async">
+                        </li>
+                        <li>
+                            <img src="assets/logos/clients/rock-with-u.png" alt="Rock With U Entertainment" width="5000" height="2372" loading="lazy" decoding="async">
+                        </li>
+                        <li>
+                            <img src="assets/logos/clients/macys.png" alt="Macy's" width="273" height="154" loading="lazy" decoding="async">
+                        </li>
+                        <li>
+                            <img src="assets/logos/clients/fontainebleau.png" alt="Fontainebleau Miami Beach" width="337" height="178" loading="lazy" decoding="async">
+                        </li>
+                        <li>
+                            <img src="assets/logos/clients/florida-panthers.png" alt="Florida Panthers" width="252" height="252" loading="lazy" decoding="async">
+                        </li>
+                        <li>
+                            <img src="assets/logos/clients/xtreme-action-park.png" alt="Xtreme Action Park" width="1024" height="260" loading="lazy" decoding="async">
                         </li>
                         <li>
                             <img src="assets/logos/clients/spirit-airlines.png" alt="Spirit Airlines" width="500" height="140" loading="lazy" decoding="async">
@@ -212,32 +239,40 @@
 
         <h2>
             LET'S CREATE<br>
-            THE EXPERIENCE.
+            THE <span class="accent-word">EXPERIENCE.</span>
         </h2>
 
         <div id="events" class="availability-panel">
             <h3>CHECK AVAILABILITY</h3>
 
             <p class="availability-note">
-                Busy times are unavailable. An empty time is not a confirmed
+                Select a date to view booked times. Please note an empty time is not a confirmed
                 opening. Please use the form below to confirm your event date and time.
             </p>
 
             <div class="availability-calendar">
-                <iframe
-                    src="https://calendar.google.com/calendar/embed?src=justgroovellc%40gmail.com&amp;ctz=UTC"
-                    title="Just Groove availability calendar"
-                    width="720"
-                    height="500"
-                    loading="lazy"
-                ></iframe>
+                <div class="calendar-toolbar" hidden>
+                    <h4 id="calendar-month"></h4>
+                    <div class="calendar-controls">
+                        <button type="button" data-calendar-action="previous" aria-label="Previous month">&#8592;</button>
+                        <button type="button" data-calendar-action="today">Today</button>
+                        <button type="button" data-calendar-action="next" aria-label="Next month">&#8594;</button>
+                    </div>
+                </div>
+                <p class="calendar-timezone"></p>
+                <div class="calendar-weekdays" aria-hidden="true" hidden>
+                    <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                </div>
+                <div class="calendar-days" role="group" aria-labelledby="calendar-month"></div>
+                <p class="calendar-status" role="status" aria-live="polite">Availability is currently unavailable. Please ask about your date below.</p>
+                <button class="calendar-retry" type="button" hidden>Try again</button>
+                <div class="calendar-details" hidden>
+                    <h5 id="calendar-selected-date"></h5>
+                    <ul class="calendar-busy-times" aria-labelledby="calendar-selected-date"></ul>
+                </div>
             </div>
 
-            <p class="availability-note availability-fallback">
-                Can't see the calendar?
-                <a href="https://calendar.google.com/calendar/embed?src=justgroovellc%40gmail.com&amp;ctz=UTC" target="_blank" rel="noopener noreferrer">Open it in a new tab</a>
-                or <a href="#booking-form">ask about your date below</a>.
-            </p>
+            
         </div>
 
         <h3 class="booking-heading">REQUEST A QUOTE</h3>
@@ -337,7 +372,7 @@
             type="text"
             id="event-theme"
             name="eventTheme"
-            placeholder="Example: Black tie, tropical, 90s, holiday party"
+            placeholder="Example: Black tie, tropical, 90s, etc."
         >
     </div>
 
@@ -630,8 +665,7 @@
     </footer>
 
 
-    <script src="js/main.js"></script>
-    <script src="js/calendar-view.js"></script>
-
+   <script src="js/calendar-view.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
